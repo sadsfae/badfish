@@ -1,16 +1,18 @@
-FROM quay.io/quads/python39:latest
+FROM quay.io/fedora/python-310:latest
 
-RUN apk add git && apk update
+USER root
+
+RUN dnf install -y git
 
 RUN git clone https://github.com/redhat-performance/badfish
 
 WORKDIR badfish
 
-RUN apk add build-base
+RUN dnf install -y gcc python3-devel
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 RUN python -m build
-RUN python -m pip install dist/badfish-1.0.3.tar.gz
+RUN python -m pip install dist/badfish-1.0.7.tar.gz
 
 ENTRYPOINT ["badfish"]
 CMD ["-v"]
