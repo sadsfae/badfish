@@ -81,16 +81,38 @@ jobs:
                   RELEASE_VERSION: ${{ needs.release.outputs.version }}
               run: |
                   cd rpm
-                  sed -i "s/^Version:.*/Version: ${RELEASE_VERSION}/" python3-badfish.spec
+
+                  # 1. Generate the actual spec file from the template
+                  # We replace placeholders @VERSION@, @RELEASE@, and @DATE@
+                  sed -e "s/@VERSION@/${RELEASE_VERSION}/g" \
+                      -e "s/@RELEASE@/1/g" \
+                      -e "s/@DATE@/$(date +'%a %b %d %Y')/g" \
+                      badfish.spec.tpl > badfish.spec
+
+                  echo "Generated badfish.spec (First 20 lines):"
+                  head -n 20 badfish.spec
+
+                  # 2. Download the source tarball from the Release
+                  # spectool reads the Source: URL in the spec file and fetches it
+                  spectool -g -R badfish.spec
+
+                  # 3. Build the SRPM
                   make srpm
+
+                  # 4. Find the SRPM file (handles cases where it is in ./ or subdirs)
                   SRPM_FILE=$(find . -name "*.src.rpm" -type f | head -n 1)
+
                   if [ -z "$SRPM_FILE" ]; then
-                      echo "Error: No .src.rpm file found in $(pwd) or subdirectories."
-                      echo "Ensure your Makefile outputs the SRPM locally or defines _topdir."
-                      exit 1
+                    echo "Error: No .src.rpm file found after running 'make srpm'"
+                    echo "Ensure 'spectool' successfully downloaded the source and 'make' built it."
+                    exit 1
                   fi
+
                   echo "Found SRPM: $SRPM_FILE"
+
+                  # 5. Submit to COPR
                   copr build quadsdev/badfish "$SRPM_FILE"
+
     # ------------------------------------------------------------------
     # JOB 3: QUAY PUBLISH (Master & Latest)
     # ------------------------------------------------------------------
