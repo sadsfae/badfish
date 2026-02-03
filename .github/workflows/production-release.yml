@@ -25,19 +25,19 @@ jobs:
             version: ${{ steps.semantic.outputs.version }}
 
         steps:
-            - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+            - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
 
             - name: Python Semantic Release
               id: semantic
-              uses: python-semantic-release/python-semantic-release@7f12e960334860b29ce37894a485596489438914 # v9.15.0
+              uses: python-semantic-release/python-semantic-release@v9.15.0
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Publish to PyPI
               if: steps.semantic.outputs.released == 'true'
-              uses: pypa/gh-action-pypi-publish@67339c736fd9352e5f1a7421053be3d68444052f # release/v1
+              uses: pypa/gh-action-pypi-publish@release/v1
               with:
                   password: ${{ secrets.PYPI_API_TOKEN }}
 
@@ -58,7 +58,7 @@ jobs:
               run: dnf -y install git
 
             - name: Checkout Tagged Release
-              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+              uses: actions/checkout@v4
               with:
                   ref: ${{ needs.release.outputs.tag }}
 
@@ -104,7 +104,7 @@ jobs:
 
         steps:
             - name: Checkout Tagged Release
-              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+              uses: actions/checkout@v4
               with:
                   ref: ${{ needs.release.outputs.tag }}
 
