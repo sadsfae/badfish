@@ -81,11 +81,16 @@ jobs:
                   RELEASE_VERSION: ${{ needs.release.outputs.version }}
               run: |
                   cd rpm
-                  # Update spec file to match PyPI version
                   sed -i "s/^Version:.*/Version: ${RELEASE_VERSION}/" python3-badfish.spec
                   make srpm
-                  copr build quadsdev/badfish *.src.rpm
-
+                  SRPM_FILE=$(find . -name "*.src.rpm" -type f | head -n 1)
+                  if [ -z "$SRPM_FILE" ]; then
+                      echo "Error: No .src.rpm file found in $(pwd) or subdirectories."
+                      echo "Ensure your Makefile outputs the SRPM locally or defines _topdir."
+                      exit 1
+                  fi
+                  echo "Found SRPM: $SRPM_FILE"
+                  copr build quadsdev/badfish "$SRPM_FILE"
     # ------------------------------------------------------------------
     # JOB 3: QUAY PUBLISH (Master & Latest)
     # ------------------------------------------------------------------
