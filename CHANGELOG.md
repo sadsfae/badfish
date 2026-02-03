@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.1.1 (2026-02-03)
+
+### Bug Fixes
+
+- Dockerfile versioning
+  ([`1ac86a7`](https://github.com/redhat-performance/badfish/commit/1ac86a758a2935bff83f9b5637960043f647fc0d))
+
+
 ## v1.1.0 (2026-02-03)
 
 ### Bug Fixes
