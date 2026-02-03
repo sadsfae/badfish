@@ -1,0 +1,43 @@
+name: Sync Back to Development
+
+on:
+    workflow_run:
+        workflows: ["Production Release"]
+        types:
+            - completed
+
+permissions:
+    contents: write
+
+jobs:
+    sync-branches:
+        runs-on: ubuntu-latest
+        # Only run if the Production Release actually succeeded
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+        steps:
+            - name: Checkout Source Code
+              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+              with:
+                  # Fetch full history to ensure merge works
+                  fetch-depth: 0
+                  # We need to checkout development, but the context starts at the default branch (usually master)
+                  ref: development
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Merge Master into Development
+              run: |
+                  git config --global user.name 'github-actions[bot]'
+                  git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+                  # Fetch latest updates from origin
+                  git fetch origin
+
+                  # Merge origin/master (which holds the new version commit) into the current branch (development)
+                  # We use --no-ff to create a merge commit, or plain merge is fine too.
+                  # If there are no changes in dev, this is a fast-forward.
+                  echo "Merging master back into development..."
+                  git merge origin/master --no-edit
+
+                  # Push the update back to development
+                  git push origin development

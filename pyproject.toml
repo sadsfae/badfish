@@ -4,3 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [tool.black]
 line-length = 120
+
+[tool.semantic_release]
+version_variables = [
+    "src/badfish/__init__.py:__version__"
+]
+branch = "master"
+build_command = "pip install build && python -m build"
