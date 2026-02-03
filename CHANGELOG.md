@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.2.0 (2026-02-03)
+
+### Features
+
+- Just testing semantic release workflow.
+  ([`bee8c78`](https://github.com/sadsfae/badfish/commit/bee8c78d5a5ea9505afb5f32c9569fc43337fae1))
+
+
 ## v1.1.0 (2026-02-03)
 
 ### Bug Fixes

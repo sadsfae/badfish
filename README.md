@@ -723,7 +723,6 @@ With rack, ULocation and blade being optional in a hierarchical fashion otherwis
 
 Please refer to our contributing [guide](CONTRIBUTING.md).
 
-
 * Here is some useful documentation
   - [Creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
   - [Keeping a cloned fork up to date](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
