@@ -77,20 +77,25 @@ jobs:
                   echo "$API_TOKEN_CONTENT" > "$HOME/.config/copr"
 
             - name: Sync Spec Version and Build
-              env:
-                  RELEASE_VERSION: ${{ needs.release.outputs.version }}
               run: |
                   cd rpm
-                  sed -i "s/^Version:.*/Version: ${RELEASE_VERSION}/" python3-badfish.spec
+
+                  # 1. Build the SRPM
                   make srpm
+
+                  # 2. Find the SRPM file (handles cases where it is in ./ or subdirs)
                   SRPM_FILE=$(find . -name "*.src.rpm" -type f | head -n 1)
+
                   if [ -z "$SRPM_FILE" ]; then
-                      echo "Error: No .src.rpm file found in $(pwd) or subdirectories."
-                      echo "Ensure your Makefile outputs the SRPM locally or defines _topdir."
-                      exit 1
+                    echo "Error: No .src.rpm file found after running 'make srpm'"
+                    exit 1
                   fi
+
                   echo "Found SRPM: $SRPM_FILE"
+
+                  # 3. Submit to COPR
                   copr build quadsdev/badfish "$SRPM_FILE"
+
     # ------------------------------------------------------------------
     # JOB 3: QUAY PUBLISH (Master & Latest)
     # ------------------------------------------------------------------

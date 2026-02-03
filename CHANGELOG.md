@@ -1,28 +1,46 @@
 # CHANGELOG
 
 
+## v1.2.1 (2026-02-03)
+
+### Bug Fixes
+
+- Production-release srpm generation
+  ([`f859e1e`](https://github.com/sadsfae/badfish/commit/f859e1ecc79ec1d50b7c56de2a8a3ac7b3936774))
+
+### Chores
+
+- Fix COPR workflows
+  ([`ec45870`](https://github.com/sadsfae/badfish/commit/ec4587092b619f75083701cc3e8cbc0eefff111f))
+
+
+## v1.2.0 (2026-02-03)
+
+### Features
+
+- Just testing semantic release workflow.
+  ([`bee8c78`](https://github.com/sadsfae/badfish/commit/bee8c78d5a5ea9505afb5f32c9569fc43337fae1))
+
+
 ## v1.1.0 (2026-02-03)
 
 ### Bug Fixes
 
 - Don't pin GHA workflows
-  ([`0d23853`](https://github.com/redhat-performance/badfish/commit/0d23853724a404f99f76f1caa09dd4f7771164fa))
+  ([`0d23853`](https://github.com/sadsfae/badfish/commit/0d23853724a404f99f76f1caa09dd4f7771164fa))
 
 - Event_loop for strict Py314 and beyond.
-  ([`a61ca94`](https://github.com/redhat-performance/badfish/commit/a61ca94a360c5b820e0cb4e5ebd8258fb8a6fdf3))
+  ([`a61ca94`](https://github.com/sadsfae/badfish/commit/a61ca94a360c5b820e0cb4e5ebd8258fb8a6fdf3))
 
 related-to: https://github.com/redhat-performance/badfish/issues/480
 
 - Supermicro session uri on redfish v101
-  ([`b6df52a`](https://github.com/redhat-performance/badfish/commit/b6df52a3aba50dfa2da7b1352fe7e84f0e85da3b))
+  ([`b6df52a`](https://github.com/sadsfae/badfish/commit/b6df52a3aba50dfa2da7b1352fe7e84f0e85da3b))
 
 ### Features
 
-- Just testing semantic release workflow.
-  ([`bee8c78`](https://github.com/redhat-performance/badfish/commit/bee8c78d5a5ea9505afb5f32c9569fc43337fae1))
-
 - Rework/refactor GHA and CI/CD.
-  ([`04f4acc`](https://github.com/redhat-performance/badfish/commit/04f4acc2b9911122846c05f889e729d175b573db))
+  ([`04f4acc`](https://github.com/sadsfae/badfish/commit/04f4acc2b9911122846c05f889e729d175b573db))
 
 * Create per-environment GHA workflows * For development and master publish quay images - remove old
   builds, perform re-tags * For master only - build new SRC rpm and push to COPR - spin and
@@ -35,44 +53,38 @@ related-to: https://github.com/redhat-performance/badfish/issues/480
 ### Bug Fixes
 
 - Test reqs
-  ([`1c6c88b`](https://github.com/redhat-performance/badfish/commit/1c6c88b2a112fcc10bdf18a0eeca347922348243))
+  ([`1c6c88b`](https://github.com/sadsfae/badfish/commit/1c6c88b2a112fcc10bdf18a0eeca347922348243))
 
 ### Features
 
 - Add newer or updated idrac_interfaces pairs.
-  ([`70a9feb`](https://github.com/redhat-performance/badfish/commit/70a9febdd4fbc4fd962c3a4d495e4eec1e836ab0))
+  ([`70a9feb`](https://github.com/sadsfae/badfish/commit/70a9febdd4fbc4fd962c3a4d495e4eec1e836ab0))
 
 
 ## v1.0.6 (2025-10-20)
 
+### Bug Fixes
+
+- Copr CI
+  ([`e1cb31b`](https://github.com/sadsfae/badfish/commit/e1cb31b01c1bf42433037f38935b16ab1a4b6bf2))
+
+- Test_nic_attr on vendor unsupported
+  ([`23c778b`](https://github.com/sadsfae/badfish/commit/23c778b938508d87e1467c2afd893c521cf4095d))
+
 ### Continuous Integration
 
 - Update package naming and drop Python 3.8-3.9 support
-  ([`21948e1`](https://github.com/redhat-performance/badfish/commit/21948e1724ac053747b1afd4da62959e71b4b74d))
+  ([`21948e1`](https://github.com/sadsfae/badfish/commit/21948e1724ac053747b1afd4da62959e71b4b74d))
 
 ### Documentation
 
 - Fixed version naming
-  ([`0249bfa`](https://github.com/redhat-performance/badfish/commit/0249bfa32453fa283a26d8481e87ec5b0bcd5a76))
-
-
-## v1.0.5 (2025-10-18)
-
-### Bug Fixes
-
-- Copr CI
-  ([`e1cb31b`](https://github.com/redhat-performance/badfish/commit/e1cb31b01c1bf42433037f38935b16ab1a4b6bf2))
-
-- Copr rpm build
-  ([`1d148d3`](https://github.com/redhat-performance/badfish/commit/1d148d36fbc95a99bbc503c0136578e792b6d012))
-
-- Test_nic_attr on vendor unsupported
-  ([`23c778b`](https://github.com/redhat-performance/badfish/commit/23c778b938508d87e1467c2afd893c521cf4095d))
+  ([`0249bfa`](https://github.com/sadsfae/badfish/commit/0249bfa32453fa283a26d8481e87ec5b0bcd5a76))
 
 ### Testing
 
 - Refactor code style and update RPM build dependencies
-  ([`2712b22`](https://github.com/redhat-performance/badfish/commit/2712b22f9ac8df7dc308c54816bda13160b70c8d))
+  ([`2712b22`](https://github.com/sadsfae/badfish/commit/2712b22f9ac8df7dc308c54816bda13160b70c8d))
 
 
 ## v1.0.4 (2025-10-15)
@@ -80,123 +92,118 @@ related-to: https://github.com/redhat-performance/badfish/issues/480
 ### Bug Fixes
 
 - Better session handling
-  ([`a512146`](https://github.com/redhat-performance/badfish/commit/a512146d824da8f480224e6177340675bee307f2))
+  ([`a512146`](https://github.com/sadsfae/badfish/commit/a512146d824da8f480224e6177340675bee307f2))
 
 closes: https://github.com/redhat-performance/badfish/issues/447
 
+- Copr rpm build
+  ([`1d148d3`](https://github.com/sadsfae/badfish/commit/1d148d36fbc95a99bbc503c0136578e792b6d012))
+
 - Default for custom device types on idrac_interfaces
-  ([`3dba55f`](https://github.com/redhat-performance/badfish/commit/3dba55fa72e03ccb380c129acaa7aedd215a52ee))
+  ([`3dba55f`](https://github.com/sadsfae/badfish/commit/3dba55fa72e03ccb380c129acaa7aedd215a52ee))
 
 closes: https://github.com/redhat-performance/badfish/issues/446
 
 - Json output on mapping values
-  ([`79c552a`](https://github.com/redhat-performance/badfish/commit/79c552a7ecd4ee616f7dd7555e81d755ad1bdc5c))
+  ([`79c552a`](https://github.com/sadsfae/badfish/commit/79c552a7ecd4ee616f7dd7555e81d755ad1bdc5c))
 
 - Logger incorrect call
-  ([`39295ab`](https://github.com/redhat-performance/badfish/commit/39295ab830bbf2eef123a42ce59d2a8c8a562d1c))
+  ([`39295ab`](https://github.com/sadsfae/badfish/commit/39295ab830bbf2eef123a42ce59d2a8c8a562d1c))
 
 - Move response status check before parsing JSON
-  ([`a1d5b74`](https://github.com/redhat-performance/badfish/commit/a1d5b74b5df134d8269f76ff4e88582babe6a565))
+  ([`a1d5b74`](https://github.com/sadsfae/badfish/commit/a1d5b74b5df134d8269f76ff4e88582babe6a565))
 
 - Rpm copr build
-  ([`5cf219e`](https://github.com/redhat-performance/badfish/commit/5cf219eff7bd5273d5599ccbba74d4576c3c4e2a))
+  ([`5cf219e`](https://github.com/sadsfae/badfish/commit/5cf219eff7bd5273d5599ccbba74d4576c3c4e2a))
 
 - Tests after session termination
-  ([`93165f9`](https://github.com/redhat-performance/badfish/commit/93165f99274e9602e0c90ad959f2dadc2a789af7))
+  ([`93165f9`](https://github.com/sadsfae/badfish/commit/93165f99274e9602e0c90ad959f2dadc2a789af7))
 
 - Tests for session mgmt
-  ([`9ff16bb`](https://github.com/redhat-performance/badfish/commit/9ff16bbc6717a2db5f63d301d224d3b5b669bd46))
+  ([`9ff16bb`](https://github.com/sadsfae/badfish/commit/9ff16bbc6717a2db5f63d301d224d3b5b669bd46))
 
 ### Build System
 
 - Rename package from badfish to pybadfish and update build configuration
-  ([`afe614d`](https://github.com/redhat-performance/badfish/commit/afe614d63d71c176af6a5ff0d4b009812511a27f))
+  ([`afe614d`](https://github.com/sadsfae/badfish/commit/afe614d63d71c176af6a5ff0d4b009812511a27f))
 
 ### Refactoring
 
 - Extract configuration, exceptions, and HTTP client into separate modules
-  ([`0736979`](https://github.com/redhat-performance/badfish/commit/07369795c438b0318066bcf01923eb983f3df974))
+  ([`0736979`](https://github.com/sadsfae/badfish/commit/07369795c438b0318066bcf01923eb983f3df974))
 
 - Extract HTTP client and parser into separate modules
-  ([`299dc1f`](https://github.com/redhat-performance/badfish/commit/299dc1fc7f17978fc84b8b88e6d4751666306910))
+  ([`299dc1f`](https://github.com/sadsfae/badfish/commit/299dc1fc7f17978fc84b8b88e6d4751666306910))
 
 - Update import paths from badfish to src.badfish for consistency
-  ([`8f7e28d`](https://github.com/redhat-performance/badfish/commit/8f7e28def209f8bfc3cd04d8be3b57c4bd8a4fae))
+  ([`8f7e28d`](https://github.com/sadsfae/badfish/commit/8f7e28def209f8bfc3cd04d8be3b57c4bd8a4fae))
 
 ### Testing
 
 - Add comprehensive test coverage for HTTP client and logger modules
-  ([`7d33ece`](https://github.com/redhat-performance/badfish/commit/7d33ecee60997391b5b9ebbb3f107f190c7351f3))
+  ([`7d33ece`](https://github.com/sadsfae/badfish/commit/7d33ecee60997391b5b9ebbb3f107f190c7351f3))
 
 - Enhance logger test coverage with YAML error handling and formatting edge cases
-  ([`4260a7e`](https://github.com/redhat-performance/badfish/commit/4260a7e369062edcb5e6949b26650880527a82ee))
+  ([`4260a7e`](https://github.com/sadsfae/badfish/commit/4260a7e369062edcb5e6949b26650880527a82ee))
 
 
 ## v1.0.3 (2025-05-22)
 
 ### Bug Fixes
 
-- Black linting
-  ([`4ed6dfc`](https://github.com/redhat-performance/badfish/commit/4ed6dfce6e8e77b0279366e1d56286709c69708c))
-
-
-## v1.0.2 (2025-05-12)
-
-### Bug Fixes
-
 - --host arg gets interpreted as --host-list
-  ([`2e8b997`](https://github.com/redhat-performance/badfish/commit/2e8b997a95651920aedc10e7a1869966644913a4))
+  ([`2e8b997`](https://github.com/sadsfae/badfish/commit/2e8b997a95651920aedc10e7a1869966644913a4))
 
 closes: https://github.com/redhat-performance/badfish/issues/151
 
 - Added libjpeg dependency
-  ([`9a9225c`](https://github.com/redhat-performance/badfish/commit/9a9225cdb94d6241f7c703705d3b89ba1b867674))
+  ([`9a9225c`](https://github.com/sadsfae/badfish/commit/9a9225cdb94d6241f7c703705d3b89ba1b867674))
 
 - Added mock for DellJobService entrypoint
-  ([`fd0584a`](https://github.com/redhat-performance/badfish/commit/fd0584aeec7eb41d0b7586480194264d5e7fddb7))
+  ([`fd0584a`](https://github.com/sadsfae/badfish/commit/fd0584aeec7eb41d0b7586480194264d5e7fddb7))
 
 - Added msg for unsupported
-  ([`a7c0978`](https://github.com/redhat-performance/badfish/commit/a7c0978e2c6920aed8a53fdf1af9f8ae5f0637bc))
+  ([`a7c0978`](https://github.com/sadsfae/badfish/commit/a7c0978e2c6920aed8a53fdf1af9f8ae5f0637bc))
 
 - Added pip to RPM build
-  ([`af3bf92`](https://github.com/redhat-performance/badfish/commit/af3bf927fab664f47b50a1cc16588897297ffd57))
+  ([`af3bf92`](https://github.com/sadsfae/badfish/commit/af3bf927fab664f47b50a1cc16588897297ffd57))
 
 - Added requirements to setup.py plus fixes from quads
-  ([`dc323bf`](https://github.com/redhat-performance/badfish/commit/dc323bffe96b1525ffaca4f461dbb54ca16f43d1))
+  ([`dc323bf`](https://github.com/sadsfae/badfish/commit/dc323bffe96b1525ffaca4f461dbb54ca16f43d1))
 
 - Added zlib for epel8
-  ([`eae0c35`](https://github.com/redhat-performance/badfish/commit/eae0c3585e89bd28f14703cec8f45b157fdd4303))
+  ([`eae0c35`](https://github.com/sadsfae/badfish/commit/eae0c3585e89bd28f14703cec8f45b157fdd4303))
 
 - Added zlib-devel to installrequires on rpm.spec
-  ([`c7b05ee`](https://github.com/redhat-performance/badfish/commit/c7b05eeeaf5a0728117d3811b5182a2f8a93f8bb))
+  ([`c7b05ee`](https://github.com/sadsfae/badfish/commit/c7b05eeeaf5a0728117d3811b5182a2f8a93f8bb))
 
 - Additional for boot_to test
-  ([`5a0333c`](https://github.com/redhat-performance/badfish/commit/5a0333c240585829f9f4e2cb09faeefbe4951044))
+  ([`5a0333c`](https://github.com/sadsfae/badfish/commit/5a0333c240585829f9f4e2cb09faeefbe4951044))
 
 - Additional test
-  ([`9f7f41c`](https://github.com/redhat-performance/badfish/commit/9f7f41c720323492946f77f42f4e08e27f6a2d98))
+  ([`9f7f41c`](https://github.com/sadsfae/badfish/commit/9f7f41c720323492946f77f42f4e08e27f6a2d98))
 
 - Aiohttp verify_ssl
-  ([`92b947a`](https://github.com/redhat-performance/badfish/commit/92b947a2a8bbde5e39402eb27cf8f4fe23754b10))
+  ([`92b947a`](https://github.com/sadsfae/badfish/commit/92b947a2a8bbde5e39402eb27cf8f4fe23754b10))
 
 - Alias compatibility
-  ([`a60f615`](https://github.com/redhat-performance/badfish/commit/a60f6154eef861f77414d2b2a75e6703dd6f5819))
+  ([`a60f615`](https://github.com/sadsfae/badfish/commit/a60f6154eef861f77414d2b2a75e6703dd6f5819))
 
 - Allowable reset types return when not available
-  ([`60c31b3`](https://github.com/redhat-performance/badfish/commit/60c31b3ac49874eb1765c4e5bb3906b79faffc75))
+  ([`60c31b3`](https://github.com/sadsfae/badfish/commit/60c31b3ac49874eb1765c4e5bb3906b79faffc75))
 
 This resolves a back trace for r640s when set type is not available
 
 - Async_lru not working with python3.10
-  ([`bfa226a`](https://github.com/redhat-performance/badfish/commit/bfa226a94fc069fa962e94211c43f04c33d4bd8e))
+  ([`bfa226a`](https://github.com/sadsfae/badfish/commit/bfa226a94fc069fa962e94211c43f04c33d4bd8e))
 
 limiting python alpine image to python 3.9
 
 - Bad paste failing on syntax check
-  ([`c6f1dea`](https://github.com/redhat-performance/badfish/commit/c6f1dea742f2cbcb8c52e7eaf79f3820593bb74e))
+  ([`c6f1dea`](https://github.com/sadsfae/badfish/commit/c6f1dea742f2cbcb8c52e7eaf79f3820593bb74e))
 
 - Better error messages for check-boot on non-supported
-  ([`bd3d2a2`](https://github.com/redhat-performance/badfish/commit/bd3d2a2e0bd5b0e602075590b6ba6d81a38b38fb))
+  ([`bd3d2a2`](https://github.com/sadsfae/badfish/commit/bd3d2a2e0bd5b0e602075590b6ba6d81a38b38fb))
 
 if BootSources redfish API entrypoint is not available, none of of the boot order operations can be
   executed on the host.
@@ -204,484 +211,487 @@ if BootSources redfish API entrypoint is not available, none of of the boot orde
 fixes: https://github.com/redhat-performance/badfish/issues/48
 
 - Better way to skip caching GET requests
-  ([`2bb1c33`](https://github.com/redhat-performance/badfish/commit/2bb1c336476d991b84d9fbf9fcf40bd5ed5605c5))
+  ([`2bb1c33`](https://github.com/sadsfae/badfish/commit/2bb1c336476d991b84d9fbf9fcf40bd5ed5605c5))
+
+- Black linting
+  ([`4ed6dfc`](https://github.com/sadsfae/badfish/commit/4ed6dfce6e8e77b0279366e1d56286709c69708c))
 
 - Blacked
-  ([`5a22209`](https://github.com/redhat-performance/badfish/commit/5a22209b8e5e0c4fdd490577ca613ce3b43ef2fb))
+  ([`5a22209`](https://github.com/sadsfae/badfish/commit/5a22209b8e5e0c4fdd490577ca613ce3b43ef2fb))
 
 - Blade host overrides
-  ([`3fde784`](https://github.com/redhat-performance/badfish/commit/3fde784c7261ed00c8a4dd5690c9512ede56f6d9))
+  ([`3fde784`](https://github.com/sadsfae/badfish/commit/3fde784c7261ed00c8a4dd5690c9512ede56f6d9))
 
 - Boot_to tests
-  ([`88f372e`](https://github.com/redhat-performance/badfish/commit/88f372e0cde2166d40fe40c613d2307fbea93532))
+  ([`88f372e`](https://github.com/sadsfae/badfish/commit/88f372e0cde2166d40fe40c613d2307fbea93532))
 
 - Bump codecov version to 2.1.13
-  ([`6618328`](https://github.com/redhat-performance/badfish/commit/661832800dce73da2ea8bfef1a259c9486cfe975))
+  ([`6618328`](https://github.com/sadsfae/badfish/commit/661832800dce73da2ea8bfef1a259c9486cfe975))
 
 * GHA seems to want this version now and gets mad otherwise.
 
 - Change boot order only on valid devices
-  ([`b6d83e4`](https://github.com/redhat-performance/badfish/commit/b6d83e42f9b3fcc053fedc7f5286e76959facb39))
+  ([`b6d83e4`](https://github.com/sadsfae/badfish/commit/b6d83e42f9b3fcc053fedc7f5286e76959facb39))
 
 - Changed arguments for mounting virtual media
-  ([`8f12e5b`](https://github.com/redhat-performance/badfish/commit/8f12e5b12bf23115b7d6e798205d0cb524354180))
+  ([`8f12e5b`](https://github.com/sadsfae/badfish/commit/8f12e5b12bf23115b7d6e798205d0cb524354180))
 
 - Changed container references on README to point at QUAY.io
-  ([`0319f98`](https://github.com/redhat-performance/badfish/commit/0319f9897a5ad12b89ae5ab12203c32cf909dda1))
+  ([`0319f98`](https://github.com/sadsfae/badfish/commit/0319f9897a5ad12b89ae5ab12203c32cf909dda1))
 
 - Check for job_id when no id is returned
-  ([`29e360b`](https://github.com/redhat-performance/badfish/commit/29e360b3430205281f314245c3ad547af78d7a6c))
+  ([`29e360b`](https://github.com/sadsfae/badfish/commit/29e360b3430205281f314245c3ad547af78d7a6c))
 
 - Code coverage execution
-  ([`03f302e`](https://github.com/redhat-performance/badfish/commit/03f302e53c545bf42d87c35e192533c7aa37be0c))
+  ([`03f302e`](https://github.com/sadsfae/badfish/commit/03f302e53c545bf42d87c35e192533c7aa37be0c))
 
 - Codecov GH action
-  ([`5b4dbb8`](https://github.com/redhat-performance/badfish/commit/5b4dbb84feba1cf2ea70ff8a3f9da82464b7628f))
+  ([`5b4dbb8`](https://github.com/sadsfae/badfish/commit/5b4dbb84feba1cf2ea70ff8a3f9da82464b7628f))
 
 - Codecov run
-  ([`bcba5ee`](https://github.com/redhat-performance/badfish/commit/bcba5ee31f24df864d5cd9fd43dd6baf6097280a))
+  ([`bcba5ee`](https://github.com/sadsfae/badfish/commit/bcba5ee31f24df864d5cd9fd43dd6baf6097280a))
 
 - Codecov tokenized
-  ([`d055a83`](https://github.com/redhat-performance/badfish/commit/d055a8301dbeec7f1d09f00534fc3d930beb95cf))
+  ([`d055a83`](https://github.com/sadsfae/badfish/commit/d055a8301dbeec7f1d09f00534fc3d930beb95cf))
 
 - Defaults for scp_targets
-  ([`c8d1474`](https://github.com/redhat-performance/badfish/commit/c8d1474e8e24c84fa24a121ead1f87b5e5b7b0c0))
+  ([`c8d1474`](https://github.com/sadsfae/badfish/commit/c8d1474e8e24c84fa24a121ead1f87b5e5b7b0c0))
 
 - Dependabot alerts
-  ([`16df98d`](https://github.com/redhat-performance/badfish/commit/16df98d30d4e95b5ab72eeb008edec2ff99baeca))
+  ([`16df98d`](https://github.com/sadsfae/badfish/commit/16df98d30d4e95b5ab72eeb008edec2ff99baeca))
 
 - Deprecated --gif
-  ([`d909eaf`](https://github.com/redhat-performance/badfish/commit/d909eafe39ca63221f5f9dd4407fa2c21266a6ea))
+  ([`d909eaf`](https://github.com/sadsfae/badfish/commit/d909eafe39ca63221f5f9dd4407fa2c21266a6ea))
 
 - Dockerfile new install instructions
-  ([`2af964b`](https://github.com/redhat-performance/badfish/commit/2af964bb05bfb500e402906001f44422e736986b))
+  ([`2af964b`](https://github.com/sadsfae/badfish/commit/2af964bb05bfb500e402906001f44422e736986b))
 
 added dockerfile_local for local development
 
 - Dockerfile_dev git checkout
-  ([`f71a7e0`](https://github.com/redhat-performance/badfish/commit/f71a7e0ed2ddff208f9488b51b5617457ee8aaa7))
+  ([`f71a7e0`](https://github.com/sadsfae/badfish/commit/f71a7e0ed2ddff208f9488b51b5617457ee8aaa7))
 
 - Downgrade of setuptools
-  ([`4c7574b`](https://github.com/redhat-performance/badfish/commit/4c7574b22bf7312524373a9e2cca19c31f03d47d))
+  ([`4c7574b`](https://github.com/sadsfae/badfish/commit/4c7574b22bf7312524373a9e2cca19c31f03d47d))
 
 - Fixed bug when requesting gif from turned off server
-  ([`2aa2e4c`](https://github.com/redhat-performance/badfish/commit/2aa2e4c209068b103405c3facf58ff44708fa9df))
+  ([`2aa2e4c`](https://github.com/sadsfae/badfish/commit/2aa2e4c209068b103405c3facf58ff44708fa9df))
 
 closes: https://github.com/redhat-performance/badfish/issues/288
 
 - Fixes to file handler
-  ([`b44611c`](https://github.com/redhat-performance/badfish/commit/b44611c22c25fa60da68476f66ffb42d8c4e11a4))
+  ([`b44611c`](https://github.com/sadsfae/badfish/commit/b44611c22c25fa60da68476f66ffb42d8c4e11a4))
 
 - G-chat webhook payload
-  ([`6b35b29`](https://github.com/redhat-performance/badfish/commit/6b35b292d0c6738f1fde9709fe2bd39a2a4e22db))
+  ([`6b35b29`](https://github.com/sadsfae/badfish/commit/6b35b292d0c6738f1fde9709fe2bd39a2a4e22db))
 
 - Gha platform version
-  ([`3c45e61`](https://github.com/redhat-performance/badfish/commit/3c45e61ef26744f3ac55a28e52564f118639279c))
+  ([`3c45e61`](https://github.com/sadsfae/badfish/commit/3c45e61ef26744f3ac55a28e52564f118639279c))
 
 - Github actions for codecov and lint
-  ([`5041c2f`](https://github.com/redhat-performance/badfish/commit/5041c2f79ad609a59cbb55f5c67168f1612c40a8))
+  ([`5041c2f`](https://github.com/sadsfae/badfish/commit/5041c2f79ad609a59cbb55f5c67168f1612c40a8))
 
 - Helpers import
-  ([`5df6155`](https://github.com/redhat-performance/badfish/commit/5df615511b83dd385a4d0b956311bea20a17d7fb))
+  ([`5df6155`](https://github.com/sadsfae/badfish/commit/5df615511b83dd385a4d0b956311bea20a17d7fb))
 
 - Idrac8 / R630 boot_to
-  ([`ac59e80`](https://github.com/redhat-performance/badfish/commit/ac59e80b1a7ea268b700b362d4b3be8d03341dce))
+  ([`ac59e80`](https://github.com/sadsfae/badfish/commit/ac59e80b1a7ea268b700b362d4b3be8d03341dce))
 
 - Idrac_interfaces blade relocation
-  ([`0335109`](https://github.com/redhat-performance/badfish/commit/03351092e02e8bdb51bfd841610dc5a9c36223ed))
+  ([`0335109`](https://github.com/sadsfae/badfish/commit/03351092e02e8bdb51bfd841610dc5a9c36223ed))
 
 - Ignore extraneous whitespace in hosts file
-  ([`e49039c`](https://github.com/redhat-performance/badfish/commit/e49039cd3d00fa40ff0505d80e691550b15c37bc))
+  ([`e49039c`](https://github.com/sadsfae/badfish/commit/e49039cd3d00fa40ff0505d80e691550b15c37bc))
 
 - Lint execution
-  ([`693d485`](https://github.com/redhat-performance/badfish/commit/693d4851f540d01c4e2429786e0762289c6e2876))
+  ([`693d485`](https://github.com/sadsfae/badfish/commit/693d4851f540d01c4e2429786e0762289c6e2876))
 
 - Lint GHA
-  ([`994fc19`](https://github.com/redhat-performance/badfish/commit/994fc1909f9f5fd9d89fdd1e21c55f800158966a))
+  ([`994fc19`](https://github.com/sadsfae/badfish/commit/994fc1909f9f5fd9d89fdd1e21c55f800158966a))
 
 - Lint ignores
-  ([`20497ad`](https://github.com/redhat-performance/badfish/commit/20497ad995c1ff21fa0425bffdb6d45d684a1882))
+  ([`20497ad`](https://github.com/sadsfae/badfish/commit/20497ad995c1ff21fa0425bffdb6d45d684a1882))
 
 - Make black lint suggestions less angry.
-  ([`f197f36`](https://github.com/redhat-performance/badfish/commit/f197f368050bad86cf50054b6f6e4b0c20c50bd6))
+  ([`f197f36`](https://github.com/sadsfae/badfish/commit/f197f368050bad86cf50054b6f6e4b0c20c50bd6))
 
 * Fix linter being mad about asyncio method spacing.
 
 - Make sure git present in container
-  ([`1857b8c`](https://github.com/redhat-performance/badfish/commit/1857b8c545e362058ef405a0bdac01508a1656be))
+  ([`1857b8c`](https://github.com/sadsfae/badfish/commit/1857b8c545e362058ef405a0bdac01508a1656be))
 
 - Merge conflicts
-  ([`1dead4e`](https://github.com/redhat-performance/badfish/commit/1dead4e23cb5663b1bd38e9c181cdbb841e2af13))
+  ([`1dead4e`](https://github.com/sadsfae/badfish/commit/1dead4e23cb5663b1bd38e9c181cdbb841e2af13))
 
 - Merge conflicts
-  ([`636d4f1`](https://github.com/redhat-performance/badfish/commit/636d4f147c331d70bfcadaf1fcd32c11f1420b96))
+  ([`636d4f1`](https://github.com/sadsfae/badfish/commit/636d4f147c331d70bfcadaf1fcd32c11f1420b96))
 
 - Move get_now to helpers + cleanup
-  ([`ec7d8dd`](https://github.com/redhat-performance/badfish/commit/ec7d8ddfd51f15f3f71333de411cf94f06cd4b78))
+  ([`ec7d8dd`](https://github.com/sadsfae/badfish/commit/ec7d8ddfd51f15f3f71333de411cf94f06cd4b78))
 
 - Moved container base image to quay plus refactor
-  ([`796a1f1`](https://github.com/redhat-performance/badfish/commit/796a1f19a29a963461f9f5e9d8fefdb65e152194))
+  ([`796a1f1`](https://github.com/sadsfae/badfish/commit/796a1f19a29a963461f9f5e9d8fefdb65e152194))
 
 - Moved helper to badfish src dir
-  ([`b44f62b`](https://github.com/redhat-performance/badfish/commit/b44f62b86d1bc850a702f2b09bdcf031290a42bc))
+  ([`b44f62b`](https://github.com/sadsfae/badfish/commit/b44f62b86d1bc850a702f2b09bdcf031290a42bc))
 
 - Moved pr template to the correct dir
-  ([`428a233`](https://github.com/redhat-performance/badfish/commit/428a233b76371728048420e28597b5c4bbbf6ec1))
+  ([`428a233`](https://github.com/sadsfae/badfish/commit/428a233b76371728048420e28597b5c4bbbf6ec1))
 
 - Non blocking or failing on --host-list
-  ([`be19cbf`](https://github.com/redhat-performance/badfish/commit/be19cbf28afd0b774ca5090dda40e3e9541aec5d))
+  ([`be19cbf`](https://github.com/sadsfae/badfish/commit/be19cbf28afd0b774ca5090dda40e3e9541aec5d))
 
 closes: https://github.com/redhat-performance/badfish/issues/388
 
 - Output order via podman
-  ([`b8c1c93`](https://github.com/redhat-performance/badfish/commit/b8c1c9367e268bc567d17bff54a275111ec180d3))
+  ([`b8c1c93`](https://github.com/sadsfae/badfish/commit/b8c1c9367e268bc567d17bff54a275111ec180d3))
 
 closes: https://github.com/redhat-performance/badfish/issues/320
 
 - Package rpm installation
-  ([`7633382`](https://github.com/redhat-performance/badfish/commit/763338219cbf268dee9953a9041c75fbae48c946))
+  ([`7633382`](https://github.com/sadsfae/badfish/commit/763338219cbf268dee9953a9041c75fbae48c946))
 
 - Package rpm installation/lint/codecov
-  ([`706d097`](https://github.com/redhat-performance/badfish/commit/706d097060ce713cc57dec42f5c4ef4fe7fe08c9))
+  ([`706d097`](https://github.com/sadsfae/badfish/commit/706d097060ce713cc57dec42f5c4ef4fe7fe08c9))
 
 - Package upload and source rpm download
-  ([`f54a36d`](https://github.com/redhat-performance/badfish/commit/f54a36df00b912ef98da31fd24a77a152ab8876a))
+  ([`f54a36d`](https://github.com/sadsfae/badfish/commit/f54a36df00b912ef98da31fd24a77a152ab8876a))
 
 - Pip install
-  ([`748fc13`](https://github.com/redhat-performance/badfish/commit/748fc13a07344dcdb5c5fe3f313990053475f554))
+  ([`748fc13`](https://github.com/sadsfae/badfish/commit/748fc13a07344dcdb5c5fe3f313990053475f554))
 
 - Pushed bad git diff
-  ([`eb2c8e5`](https://github.com/redhat-performance/badfish/commit/eb2c8e56dfdefe3590592c979defd5f1e3e664a1))
+  ([`eb2c8e5`](https://github.com/sadsfae/badfish/commit/eb2c8e56dfdefe3590592c979defd5f1e3e664a1))
 
 - Python packaging
-  ([`adb4d69`](https://github.com/redhat-performance/badfish/commit/adb4d692b52e7c40eb64339418d395e7a56b4519))
+  ([`adb4d69`](https://github.com/sadsfae/badfish/commit/adb4d692b52e7c40eb64339418d395e7a56b4519))
 
 - Python versions for GHA
-  ([`fae5f03`](https://github.com/redhat-performance/badfish/commit/fae5f03802f051a6ab2aaed8eabab491a9094915))
+  ([`fae5f03`](https://github.com/sadsfae/badfish/commit/fae5f03802f051a6ab2aaed8eabab491a9094915))
 
 - Readme TOC
-  ([`8b955d9`](https://github.com/redhat-performance/badfish/commit/8b955d9c28d8b3faed23bb3fad4ce74e69ad1689))
+  ([`8b955d9`](https://github.com/sadsfae/badfish/commit/8b955d9c28d8b3faed23bb3fad4ce74e69ad1689))
 
 - Reboot-only for 740XD
-  ([`2bb9694`](https://github.com/redhat-performance/badfish/commit/2bb9694121104fd661583e90b77da44cf81094af))
+  ([`2bb9694`](https://github.com/sadsfae/badfish/commit/2bb9694121104fd661583e90b77da44cf81094af))
 
 closes: https://github.com/redhat-performance/badfish/issues/118
 
 - Remove scheduled GHA and fix for branch name
-  ([`8350462`](https://github.com/redhat-performance/badfish/commit/8350462e042301e3259e0dd7957aeb9d85f526a5))
+  ([`8350462`](https://github.com/sadsfae/badfish/commit/8350462e042301e3259e0dd7957aeb9d85f526a5))
 
 - Removed breakpoint
-  ([`8eee0b4`](https://github.com/redhat-performance/badfish/commit/8eee0b417473c550ec7b24b972c9ac41f37ef19b))
+  ([`8eee0b4`](https://github.com/sadsfae/badfish/commit/8eee0b417473c550ec7b24b972c9ac41f37ef19b))
 
 - Removed files definition from spec.tpl
-  ([`8117a6e`](https://github.com/redhat-performance/badfish/commit/8117a6e9469dd5772b360c6a0323ab3a1d16bc67))
+  ([`8117a6e`](https://github.com/sadsfae/badfish/commit/8117a6e9469dd5772b360c6a0323ab3a1d16bc67))
 
 - Removed problematic call from boot_to()
-  ([`64ff289`](https://github.com/redhat-performance/badfish/commit/64ff289961108fa629f5c91efc1f2998522f277f))
+  ([`64ff289`](https://github.com/sadsfae/badfish/commit/64ff289961108fa629f5c91efc1f2998522f277f))
 
 closes: #354
 
 - Removed redundant method
-  ([`b6129d4`](https://github.com/redhat-performance/badfish/commit/b6129d487c387a3f87d483a4a44f3a2c19672eb9))
+  ([`b6129d4`](https://github.com/sadsfae/badfish/commit/b6129d487c387a3f87d483a4a44f3a2c19672eb9))
 
 - Removed rpm build on PR
-  ([`2c4b60b`](https://github.com/redhat-performance/badfish/commit/2c4b60b2b844c4b20b97770b9faae94ba05fae50))
+  ([`2c4b60b`](https://github.com/sadsfae/badfish/commit/2c4b60b2b844c4b20b97770b9faae94ba05fae50))
 
 - Removed support for py3.6
-  ([`c94cfa1`](https://github.com/redhat-performance/badfish/commit/c94cfa168b72d168ca2e69dbdbdea231b8a8c814))
+  ([`c94cfa1`](https://github.com/sadsfae/badfish/commit/c94cfa168b72d168ca2e69dbdbdea231b8a8c814))
 
 - Removed try catch
-  ([`88acd3d`](https://github.com/redhat-performance/badfish/commit/88acd3d5cb2efbf26fe8bb84ee1111c0c25c2dff))
+  ([`88acd3d`](https://github.com/sadsfae/badfish/commit/88acd3d5cb2efbf26fe8bb84ee1111c0c25c2dff))
 
 - Removed unnecessary part of condition
-  ([`7cb32e7`](https://github.com/redhat-performance/badfish/commit/7cb32e76a99f33fbdc45b8489ae413440024ba2c))
+  ([`7cb32e7`](https://github.com/sadsfae/badfish/commit/7cb32e76a99f33fbdc45b8489ae413440024ba2c))
 
 - Reusing read_yaml
-  ([`2eba02f`](https://github.com/redhat-performance/badfish/commit/2eba02f33b8fe862869fe2093d12b6244dfe3a06))
+  ([`2eba02f`](https://github.com/sadsfae/badfish/commit/2eba02f33b8fe862869fe2093d12b6244dfe3a06))
 
 - Rpm check from tox to pytest
-  ([`d371ef0`](https://github.com/redhat-performance/badfish/commit/d371ef098507c7501e74d79593a3960da6cefbff))
+  ([`d371ef0`](https://github.com/sadsfae/badfish/commit/d371ef098507c7501e74d79593a3960da6cefbff))
 
 - Rpm GHA build and upload
-  ([`c691ca1`](https://github.com/redhat-performance/badfish/commit/c691ca1afbafdcc0cdd731913994cee6ca19986d))
+  ([`c691ca1`](https://github.com/sadsfae/badfish/commit/c691ca1afbafdcc0cdd731913994cee6ca19986d))
 
 - Rpm spec tmpl
-  ([`d2c54fc`](https://github.com/redhat-performance/badfish/commit/d2c54fc1d390f371bcd60436493bdeb64b448d8a))
+  ([`d2c54fc`](https://github.com/sadsfae/badfish/commit/d2c54fc1d390f371bcd60436493bdeb64b448d8a))
 
 - Safer url parsing
-  ([`e593766`](https://github.com/redhat-performance/badfish/commit/e593766fc05c12e635ac5dd70c306df7e3c84a22))
+  ([`e593766`](https://github.com/sadsfae/badfish/commit/e593766fc05c12e635ac5dd70c306df7e3c84a22))
 
 - Set nic attributes
-  ([`909461d`](https://github.com/redhat-performance/badfish/commit/909461d017c5562835454df5945f97b3355f15a7))
+  ([`909461d`](https://github.com/sadsfae/badfish/commit/909461d017c5562835454df5945f97b3355f15a7))
 
 - Setup missing helpers include
-  ([`c8116d7`](https://github.com/redhat-performance/badfish/commit/c8116d7e0ca46d8714658e47bc1df6f19ec7f45e))
+  ([`c8116d7`](https://github.com/sadsfae/badfish/commit/c8116d7e0ca46d8714658e47bc1df6f19ec7f45e))
 
 We were missing to include the helpers directory under the package definition for setuptools. Also
   refactored the logging logic to an independent logger for easier imports when using BF as a python
   library. Included .editorconfig for code styling.
 
 - Spec.tpl and setup entrypoint
-  ([`26341cc`](https://github.com/redhat-performance/badfish/commit/26341cc32fd5f7dba43e82ad9685220e99c8280e))
+  ([`26341cc`](https://github.com/sadsfae/badfish/commit/26341cc32fd5f7dba43e82ad9685220e99c8280e))
 
 - String formatting on power consumed
-  ([`ad5e892`](https://github.com/redhat-performance/badfish/commit/ad5e8924706f164926e56cb2b65ccaee9c5daf68))
+  ([`ad5e892`](https://github.com/sadsfae/badfish/commit/ad5e8924706f164926e56cb2b65ccaee9c5daf68))
 
 - Support for uefi boot mode
-  ([`94749e0`](https://github.com/redhat-performance/badfish/commit/94749e02259c84850a8258c11e47e6a057dc877d))
+  ([`94749e0`](https://github.com/sadsfae/badfish/commit/94749e02259c84850a8258c11e47e6a057dc877d))
 
 - Test scp on test pass mocking datetime.now
-  ([`9ded0bc`](https://github.com/redhat-performance/badfish/commit/9ded0bc6d10cef991eb10052e90d2d6ca91b7a09))
+  ([`9ded0bc`](https://github.com/sadsfae/badfish/commit/9ded0bc6d10cef991eb10052e90d2d6ca91b7a09))
 
 - Test_bios_pas imports
-  ([`a083308`](https://github.com/redhat-performance/badfish/commit/a083308780ecb05a20958db71022fff2859cf70a))
+  ([`a083308`](https://github.com/sadsfae/badfish/commit/a083308780ecb05a20958db71022fff2859cf70a))
 
 - Tests
-  ([`319f96a`](https://github.com/redhat-performance/badfish/commit/319f96abfae108954fcdf60f7fe6373ea45e5173))
+  ([`319f96a`](https://github.com/sadsfae/badfish/commit/319f96abfae108954fcdf60f7fe6373ea45e5173))
 
 - Tests
-  ([`b9219a4`](https://github.com/redhat-performance/badfish/commit/b9219a44e1abfef3cd688c22041d3ded0d0525fe))
+  ([`b9219a4`](https://github.com/sadsfae/badfish/commit/b9219a44e1abfef3cd688c22041d3ded0d0525fe))
 
 - Tests dependecies for tox on rpmbuild
-  ([`d57208b`](https://github.com/redhat-performance/badfish/commit/d57208bbecf5b998dfe7e36d229fd7713655b68c))
+  ([`d57208b`](https://github.com/sadsfae/badfish/commit/d57208bbecf5b998dfe7e36d229fd7713655b68c))
 
 - Tests for boot_to and virtual_media
-  ([`7ad8f43`](https://github.com/redhat-performance/badfish/commit/7ad8f430873ad47c143463971b43d6b919d29a35))
+  ([`7ad8f43`](https://github.com/sadsfae/badfish/commit/7ad8f430873ad47c143463971b43d6b919d29a35))
 
 - Tests import issues
-  ([`2a47daa`](https://github.com/redhat-performance/badfish/commit/2a47daa8d458f30383f156ff56a645f5f6832e96))
+  ([`2a47daa`](https://github.com/sadsfae/badfish/commit/2a47daa8d458f30383f156ff56a645f5f6832e96))
 
 - Tox version
-  ([`757f36d`](https://github.com/redhat-performance/badfish/commit/757f36d6be87636a3b1e973020e0bf44e0616796))
+  ([`757f36d`](https://github.com/sadsfae/badfish/commit/757f36d6be87636a3b1e973020e0bf44e0616796))
 
 ### Code Style
 
 - Formatting with black
-  ([`6c84332`](https://github.com/redhat-performance/badfish/commit/6c843322aaf5f5d5eac5fedea32537dc210afe6b))
+  ([`6c84332`](https://github.com/sadsfae/badfish/commit/6c843322aaf5f5d5eac5fedea32537dc210afe6b))
 
 - Formatting with black
-  ([`74c1211`](https://github.com/redhat-performance/badfish/commit/74c1211c8e079c2c48cad0429db5cee8e9ff7c9d))
+  ([`74c1211`](https://github.com/sadsfae/badfish/commit/74c1211c8e079c2c48cad0429db5cee8e9ff7c9d))
 
 - Formatting with black
-  ([`e7c34a4`](https://github.com/redhat-performance/badfish/commit/e7c34a4bf44ef72c3ebd4888afe8e2031bf99050))
+  ([`e7c34a4`](https://github.com/sadsfae/badfish/commit/e7c34a4bf44ef72c3ebd4888afe8e2031bf99050))
 
 - Lint fixes
-  ([`bbb1680`](https://github.com/redhat-performance/badfish/commit/bbb16806e52c1688d807bfc4e195e5466c3fec29))
+  ([`bbb1680`](https://github.com/sadsfae/badfish/commit/bbb16806e52c1688d807bfc4e195e5466c3fec29))
 
 - Removed comments and fixed import indentation, from recently added tests
-  ([`549b655`](https://github.com/redhat-performance/badfish/commit/549b655d138739f2df741780b12a9af8c21a8aae))
+  ([`549b655`](https://github.com/sadsfae/badfish/commit/549b655d138739f2df741780b12a9af8c21a8aae))
 
 - Unnecessary if/else changed to one liner
-  ([`9673797`](https://github.com/redhat-performance/badfish/commit/9673797b2a1a7b9217762d2e8b144d66552ac0be))
+  ([`9673797`](https://github.com/sadsfae/badfish/commit/9673797b2a1a7b9217762d2e8b144d66552ac0be))
 
 ### Continuous Integration
 
 - Fix for create versioned tarball
-  ([`47cb674`](https://github.com/redhat-performance/badfish/commit/47cb674a220a93da42f686736b09a1068e72a3ea))
+  ([`47cb674`](https://github.com/sadsfae/badfish/commit/47cb674a220a93da42f686736b09a1068e72a3ea))
 
 - Fix for tarball creation
-  ([`c8d6f7d`](https://github.com/redhat-performance/badfish/commit/c8d6f7dedc38c5ded225ac22339524df6b9d66a4))
+  ([`c8d6f7d`](https://github.com/sadsfae/badfish/commit/c8d6f7dedc38c5ded225ac22339524df6b9d66a4))
 
 - Fixed tarball path
-  ([`86f3223`](https://github.com/redhat-performance/badfish/commit/86f322383e6b7c57e0071aa332318d529ccc0b63))
+  ([`86f3223`](https://github.com/sadsfae/badfish/commit/86f322383e6b7c57e0071aa332318d529ccc0b63))
 
 - Moved gha for create release to use gh cli
-  ([`f06b354`](https://github.com/redhat-performance/badfish/commit/f06b354114dda70bd3acfbf9b136449089678f5a))
+  ([`f06b354`](https://github.com/sadsfae/badfish/commit/f06b354114dda70bd3acfbf9b136449089678f5a))
 
 ### Documentation
 
 - Adde to container volume mapping
-  ([`029dad2`](https://github.com/redhat-performance/badfish/commit/029dad28b24e17a1ff020e2e885bd76ef73880ba))
+  ([`029dad2`](https://github.com/sadsfae/badfish/commit/029dad28b24e17a1ff020e2e885bd76ef73880ba))
 
 - Added badges plus --gif docs
-  ([`9f3cd34`](https://github.com/redhat-performance/badfish/commit/9f3cd34b41f5d23521c0dce61b1e02d7dc7dbe7a))
+  ([`9f3cd34`](https://github.com/sadsfae/badfish/commit/9f3cd34b41f5d23521c0dce61b1e02d7dc7dbe7a))
 
 - Added CoC
-  ([`c79c08c`](https://github.com/redhat-performance/badfish/commit/c79c08c0ffc7736bd64a94449950962c0948f063))
+  ([`c79c08c`](https://github.com/sadsfae/badfish/commit/c79c08c0ffc7736bd64a94449950962c0948f063))
 
 - Added docs for boot-to-type
-  ([`09ecddc`](https://github.com/redhat-performance/badfish/commit/09ecddc9cbb9503222aaeb4e6899c1cf19a8f434))
+  ([`09ecddc`](https://github.com/sadsfae/badfish/commit/09ecddc9cbb9503222aaeb4e6899c1cf19a8f434))
 
 fixes: https://github.com/redhat-performance/badfish/issues/23
 
 - Added note for podman run to store files
-  ([`c76c728`](https://github.com/redhat-performance/badfish/commit/c76c728b2311d01ccfff0aea313e58bacf11f0bc))
+  ([`c76c728`](https://github.com/sadsfae/badfish/commit/c76c728b2311d01ccfff0aea313e58bacf11f0bc))
 
 - Added README instructions for RPM install
-  ([`77d8967`](https://github.com/redhat-performance/badfish/commit/77d8967197172b98272b1350e584f4427787052b))
+  ([`77d8967`](https://github.com/sadsfae/badfish/commit/77d8967197172b98272b1350e584f4427787052b))
 
 Added instructions for RPM install plus usage as python library. Slight refactor of rpm.spec.tpl.
   Bumped version of pytest plus added python 3.10 environment to tox testing.
 
 - Center BF image
-  ([`0e4c969`](https://github.com/redhat-performance/badfish/commit/0e4c9692b51690ef32679ccaf75369fcbd5fde81))
+  ([`0e4c969`](https://github.com/sadsfae/badfish/commit/0e4c9692b51690ef32679ccaf75369fcbd5fde81))
 
 - Coc amendment
-  ([`3ad65a8`](https://github.com/redhat-performance/badfish/commit/3ad65a84f4016c562ccf4b540276bd4c958b7d54))
+  ([`3ad65a8`](https://github.com/sadsfae/badfish/commit/3ad65a84f4016c562ccf4b540276bd4c958b7d54))
 
 - New lines for bages
-  ([`2f7aae0`](https://github.com/redhat-performance/badfish/commit/2f7aae0d8a3d607a27a986c5a81924f055e26ac7))
+  ([`2f7aae0`](https://github.com/sadsfae/badfish/commit/2f7aae0d8a3d607a27a986c5a81924f055e26ac7))
 
 - No new lines for badges
-  ([`f5091ef`](https://github.com/redhat-performance/badfish/commit/f5091ef83ce070b1d6978c71a4ee0f84b79a1a18))
+  ([`f5091ef`](https://github.com/sadsfae/badfish/commit/f5091ef83ce070b1d6978c71a4ee0f84b79a1a18))
 
 - Removed support for virtualenv plus code example fixes
-  ([`ca14c4a`](https://github.com/redhat-performance/badfish/commit/ca14c4aff4ee739b4d1f249abe3e3dbf1c1b150b))
+  ([`ca14c4a`](https://github.com/sadsfae/badfish/commit/ca14c4aff4ee739b4d1f249abe3e3dbf1c1b150b))
 
 - Reworked virtualenv usage
-  ([`7d57c46`](https://github.com/redhat-performance/badfish/commit/7d57c4651683e7095c9fcae8cafda6351ab7d0aa))
+  ([`7d57c46`](https://github.com/sadsfae/badfish/commit/7d57c4651683e7095c9fcae8cafda6351ab7d0aa))
 
 - Updated contributing guide
-  ([`2776c04`](https://github.com/redhat-performance/badfish/commit/2776c04f3efd44b92acb32bbaee4aa626eb702be))
+  ([`2776c04`](https://github.com/sadsfae/badfish/commit/2776c04f3efd44b92acb32bbaee4aa626eb702be))
 
 ### Features
 
 - Add ALIAS R750 override and minor doc.
-  ([`9f6e4ff`](https://github.com/redhat-performance/badfish/commit/9f6e4ff16fb3af07e095c31736f3cefb619f350d))
+  ([`9f6e4ff`](https://github.com/sadsfae/badfish/commit/9f6e4ff16fb3af07e095c31736f3cefb619f350d))
 
 - Add GH CI for PR.
-  ([`3b9498f`](https://github.com/redhat-performance/badfish/commit/3b9498fe11f8c6abb26a978387fd4bdaa2e1b9f0))
+  ([`3b9498f`](https://github.com/sadsfae/badfish/commit/3b9498fe11f8c6abb26a978387fd4bdaa2e1b9f0))
 
 * Add GHA for pull requests also.
 
 - Add issue and push chat webhooks.
-  ([`616626a`](https://github.com/redhat-performance/badfish/commit/616626ad944c60f3d9c1c575f0ac34daecb58e8b))
+  ([`616626a`](https://github.com/sadsfae/badfish/commit/616626ad944c60f3d9c1c575f0ac34daecb58e8b))
 
 * This adds GHA for accessing repo secrets to push chat notifications via webhooks for: - new issue
   creation - push events via https://github.com/marketplace/actions/workflow-webhook-action
 
 - Added --gif
-  ([`dcd1ad3`](https://github.com/redhat-performance/badfish/commit/dcd1ad382aa65b26ebd1a6bacecd720977c2b9b6))
+  ([`dcd1ad3`](https://github.com/sadsfae/badfish/commit/dcd1ad382aa65b26ebd1a6bacecd720977c2b9b6))
 
 This generates a gif with all screenshots taken in a default period of 3 minutes with intervals of 5
   seconds. This can be modified by passing --minutes and --interval.
 
 - Added --ls-jobs argparse.
-  ([`9d976d4`](https://github.com/redhat-performance/badfish/commit/9d976d4d40887b84a08bbd2affc2ccadbc7b420f))
+  ([`9d976d4`](https://github.com/sadsfae/badfish/commit/9d976d4d40887b84a08bbd2affc2ccadbc7b420f))
 
 Returns a list of active jobs if any or the following msg if none: "- INFO - No active jobs found."
 
 - Added BIOS Setup password management plus check-job-status
-  ([`1257d9c`](https://github.com/redhat-performance/badfish/commit/1257d9c0262ff77d64e3a77f235636dde3049859))
+  ([`1257d9c`](https://github.com/sadsfae/badfish/commit/1257d9c0262ff77d64e3a77f235636dde3049859))
 
 closes: https://github.com/redhat-performance/badfish/issues/114
 
 - Added boot-to-mac action
-  ([`06d522a`](https://github.com/redhat-performance/badfish/commit/06d522a2c7fc75af4849b9afe549e404cafe9601))
+  ([`06d522a`](https://github.com/sadsfae/badfish/commit/06d522a2c7fc75af4849b9afe549e404cafe9601))
 
 - Added Dockerfile for building development branch container
-  ([`fe0efba`](https://github.com/redhat-performance/badfish/commit/fe0efba0a86d35434c8142393f500d03a0c86916))
+  ([`fe0efba`](https://github.com/sadsfae/badfish/commit/fe0efba0a86d35434c8142393f500d03a0c86916))
 
 - Added force optional argument for clear-jobs
-  ([`96eca22`](https://github.com/redhat-performance/badfish/commit/96eca227a08fbb5796f96bce59c905cb84c09e09))
+  ([`96eca22`](https://github.com/sadsfae/badfish/commit/96eca227a08fbb5796f96bce59c905cb84c09e09))
 
 added log message for interface not being a valid boot device
 
 - Added get and set for SRIOV global mode
-  ([`ad725db`](https://github.com/redhat-performance/badfish/commit/ad725dbc41ff0ff04598cf8f235b6da309339ff5))
+  ([`ad725db`](https://github.com/sadsfae/badfish/commit/ad725dbc41ff0ff04598cf8f235b6da309339ff5))
 
 - Added GH actions badge
-  ([`76bdf32`](https://github.com/redhat-performance/badfish/commit/76bdf3203999455272d1e2d210ac3073f2c398d0))
+  ([`76bdf32`](https://github.com/sadsfae/badfish/commit/76bdf3203999455272d1e2d210ac3073f2c398d0))
 
 - Added github actions for rpm package build
-  ([`0060ab1`](https://github.com/redhat-performance/badfish/commit/0060ab18217aad1c207bfacb58ac59d12355e226))
+  ([`0060ab1`](https://github.com/sadsfae/badfish/commit/0060ab18217aad1c207bfacb58ac59d12355e226))
 
 This includes the rpm dir with a makefile and spec template. Ported over async_lru for lack of
   fedora packaging.
 
 - Added handler for bad FQDN hostname
-  ([`635b3a4`](https://github.com/redhat-performance/badfish/commit/635b3a4515640efc712a3eddcdd2b9a00b9fbc7b))
+  ([`635b3a4`](https://github.com/sadsfae/badfish/commit/635b3a4515640efc712a3eddcdd2b9a00b9fbc7b))
 
 - Added handler for unauthorized access
-  ([`22657f9`](https://github.com/redhat-performance/badfish/commit/22657f9b8e68f44b37db67cbe6788a7d605459ce))
+  ([`22657f9`](https://github.com/sadsfae/badfish/commit/22657f9b8e68f44b37db67cbe6788a7d605459ce))
 
 - Added ls-interfaces
-  ([`c730af7`](https://github.com/redhat-performance/badfish/commit/c730af7cca746253c9e4b2f7a980aa23cdb849cd))
+  ([`c730af7`](https://github.com/sadsfae/badfish/commit/c730af7cca746253c9e4b2f7a980aa23cdb849cd))
 
 - Added ls-processors and ls-memory
-  ([`6be2c29`](https://github.com/redhat-performance/badfish/commit/6be2c299ca8f6361bf476200271b2ef0131925d0))
+  ([`6be2c29`](https://github.com/sadsfae/badfish/commit/6be2c299ca8f6361bf476200271b2ef0131925d0))
 
 - Added new command for delta between firmware inventories
-  ([`b40e3c3`](https://github.com/redhat-performance/badfish/commit/b40e3c34b8e8be0ca9d0fc7528cf683763512625))
+  ([`b40e3c3`](https://github.com/sadsfae/badfish/commit/b40e3c34b8e8be0ca9d0fc7528cf683763512625))
 
 closes: https://github.com/redhat-performance/badfish/issues/302
 
 - Added new command for listing server serial number
-  ([`456f883`](https://github.com/redhat-performance/badfish/commit/456f883bff5e56ef07e3a7a471ec0fb7bf8e3200))
+  ([`456f883`](https://github.com/sadsfae/badfish/commit/456f883bff5e56ef07e3a7a471ec0fb7bf8e3200))
 
 style: code was styled with black and checked with flake8
 
 closes: https://github.com/redhat-performance/badfish/issues/249
 
 - Added pip upgrade to dockerfiles
-  ([`3bacd6a`](https://github.com/redhat-performance/badfish/commit/3bacd6ad9a0af8caff367fe2812a86baabb95b75))
+  ([`3bacd6a`](https://github.com/sadsfae/badfish/commit/3bacd6ad9a0af8caff367fe2812a86baabb95b75))
 
 - Added power control plus bios reset
-  ([`3edbdbe`](https://github.com/redhat-performance/badfish/commit/3edbdbe24159905b31c135e882e01516160865cf))
+  ([`3edbdbe`](https://github.com/sadsfae/badfish/commit/3edbdbe24159905b31c135e882e01516160865cf))
 
 - Added PR template
-  ([`357156a`](https://github.com/redhat-performance/badfish/commit/357156afb809ea719d681cfbded8e6d89edcbb9e))
+  ([`357156a`](https://github.com/sadsfae/badfish/commit/357156afb809ea719d681cfbded8e6d89edcbb9e))
 
 - Added reboot on boot change
-  ([`05fe01f`](https://github.com/redhat-performance/badfish/commit/05fe01f1c2c4fda9290280065cfbf4584c86c5f7))
+  ([`05fe01f`](https://github.com/sadsfae/badfish/commit/05fe01f1c2c4fda9290280065cfbf4584c86c5f7))
 
 closes:https://github.com/redhat-performance/quads/issues/309
 
 - Added screenshot capabilities
-  ([`5d13d80`](https://github.com/redhat-performance/badfish/commit/5d13d80acf26a676c5e96454cec7b76268f99d44))
+  ([`5d13d80`](https://github.com/sadsfae/badfish/commit/5d13d80acf26a676c5e96454cec7b76268f99d44))
 
 - Added set and get for bios attributes free-form
-  ([`3dfd465`](https://github.com/redhat-performance/badfish/commit/3dfd465f0eead4fe896a2f73a8c74134ef64dcb5))
+  ([`3dfd465`](https://github.com/sadsfae/badfish/commit/3dfd465f0eead4fe896a2f73a8c74134ef64dcb5))
 
 - Added short FQDN to screenshot out
-  ([`9bc6fa6`](https://github.com/redhat-performance/badfish/commit/9bc6fa6d7db5210db9e549127eeb03430ee03c59))
+  ([`9bc6fa6`](https://github.com/sadsfae/badfish/commit/9bc6fa6d7db5210db9e549127eeb03430ee03c59))
 
 - Added support for formatted output and ordered output for bulk actions
-  ([`fa9daaf`](https://github.com/redhat-performance/badfish/commit/fa9daaf72406cfb9432e39675093101f231889a9))
+  ([`fa9daaf`](https://github.com/sadsfae/badfish/commit/fa9daaf72406cfb9432e39675093101f231889a9))
 
 closes: https://github.com/redhat-performance/badfish/issues/250
 
 closes: https://github.com/redhat-performance/badfish/issues/306
 
 - Added support for UEFI boot mode on change/check boot order
-  ([`9183078`](https://github.com/redhat-performance/badfish/commit/918307857bb801af9302473e3d36f3e093821f51))
+  ([`9183078`](https://github.com/sadsfae/badfish/commit/918307857bb801af9302473e3d36f3e093821f51))
 
 Additionally refactored exception handling and logging
 
 closes: https://github.com/redhat-performance/badfish/issues/128
 
 - Added test for boot-to-bad-mac
-  ([`55302b5`](https://github.com/redhat-performance/badfish/commit/55302b577ab34914f113aa0fb29b559b5bdafebe))
+  ([`55302b5`](https://github.com/sadsfae/badfish/commit/55302b577ab34914f113aa0fb29b559b5bdafebe))
 
 - Added tests for boot-to-mac and boot-to-type
-  ([`c92cd77`](https://github.com/redhat-performance/badfish/commit/c92cd777540c27b0a5b4b273405e42a5108fdd64))
+  ([`c92cd77`](https://github.com/sadsfae/badfish/commit/c92cd777540c27b0a5b4b273405e42a5108fdd64))
 
 - Added toggle for enabling/disabling boot device
-  ([`0df57c5`](https://github.com/redhat-performance/badfish/commit/0df57c54b4cd14a273bd71dda1278d1ff51f7cca))
+  ([`0df57c5`](https://github.com/sadsfae/badfish/commit/0df57c54b4cd14a273bd71dda1278d1ff51f7cca))
 
 - Added uefi boot source override
-  ([`2b95af3`](https://github.com/redhat-performance/badfish/commit/2b95af3ecd68c87655abdc9666a4b43774be4c81))
+  ([`2b95af3`](https://github.com/sadsfae/badfish/commit/2b95af3ecd68c87655abdc9666a4b43774be4c81))
 
 - Added VirtualMedia check and unmount
-  ([`0cf31e7`](https://github.com/redhat-performance/badfish/commit/0cf31e737d44dbe9386525f3b27a801e1b08d80a))
+  ([`0cf31e7`](https://github.com/sadsfae/badfish/commit/0cf31e737d44dbe9386525f3b27a801e1b08d80a))
 
 NOTE: All hosts can list the virtual media but unmount functionality
 
 is only available for SuperMicro
 
 - Change of authentification to tokeninzed
-  ([`0c98cc2`](https://github.com/redhat-performance/badfish/commit/0c98cc28061ca5e31bb49b65cc642ff042676e7c))
+  ([`0c98cc2`](https://github.com/sadsfae/badfish/commit/0c98cc28061ca5e31bb49b65cc642ff042676e7c))
 
 Closes: https://github.com/redhat-performance/badfish/issues/244
 
 - Export and import SCP
-  ([`fa1a038`](https://github.com/redhat-performance/badfish/commit/fa1a038847c6849aefd1fc05e3097bba27069c67))
+  ([`fa1a038`](https://github.com/sadsfae/badfish/commit/fa1a038847c6849aefd1fc05e3097bba27069c67))
 
 - Host type overrides
-  ([`7d3b019`](https://github.com/redhat-performance/badfish/commit/7d3b019b58c83a5ba79b3ffb9e149d89dd2b15a5))
+  ([`7d3b019`](https://github.com/sadsfae/badfish/commit/7d3b019b58c83a5ba79b3ffb9e149d89dd2b15a5))
 
 - Make tox/lint run on PR's too.
-  ([`37bfee3`](https://github.com/redhat-performance/badfish/commit/37bfee34f872c198d24d030bd75246ee1bdd9bed))
+  ([`37bfee3`](https://github.com/sadsfae/badfish/commit/37bfee34f872c198d24d030bd75246ee1bdd9bed))
 
 * Run GHA CI for PR's too * Use `pull_request` instead of `pull_request_target` as tox and lint
   shouldn't need access to repo secrets.
@@ -689,75 +699,75 @@ Closes: https://github.com/redhat-performance/badfish/issues/244
 reference: https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
 
 - Moved setup static meta to setup.cfg
-  ([`fe15c94`](https://github.com/redhat-performance/badfish/commit/fe15c94d443fc064ffc63859a924fa5313672788))
+  ([`fe15c94`](https://github.com/sadsfae/badfish/commit/fe15c94d443fc064ffc63859a924fa5313672788))
 
 bumped version to 1.0.2 amended docs with new install method added pytest.ini and pyproject.toml
 
 - Porting over quads changes w/asyncio
-  ([`2be25ca`](https://github.com/redhat-performance/badfish/commit/2be25ca45b4e16593b09b45fbd985f927d2152aa))
+  ([`2be25ca`](https://github.com/sadsfae/badfish/commit/2be25ca45b4e16593b09b45fbd985f927d2152aa))
 
 - Provide more accurate return codes
-  ([`776bf01`](https://github.com/redhat-performance/badfish/commit/776bf01fab7d182252b347dd062d2f41e86c553f))
+  ([`776bf01`](https://github.com/sadsfae/badfish/commit/776bf01fab7d182252b347dd062d2f41e86c553f))
 
 - Removed hardcoded boot types
-  ([`8054223`](https://github.com/redhat-performance/badfish/commit/80542237abddbaf5068981f4d920b2972a889d0a))
+  ([`8054223`](https://github.com/sadsfae/badfish/commit/80542237abddbaf5068981f4d920b2972a889d0a))
 
 we are now able to define on the interfaces yaml a free form type as the first string parsed from
   the key value when splitting it by _. We will parse the different types allowed from the yaml and
   display the available options if the type passed as argument doesn't match any of those.
 
 - Replacing travis with GH actions
-  ([`c505d71`](https://github.com/redhat-performance/badfish/commit/c505d71e2aea420493a2030dea08007b0e10d0de))
+  ([`c505d71`](https://github.com/sadsfae/badfish/commit/c505d71e2aea420493a2030dea08007b0e10d0de))
 
 - Rewrite and extension of features for virtual media
-  ([`0b029a2`](https://github.com/redhat-performance/badfish/commit/0b029a2d62f786503ad05e15a294f52032d3f0bf))
+  ([`0b029a2`](https://github.com/sadsfae/badfish/commit/0b029a2d62f786503ad05e15a294f52032d3f0bf))
 
 part of: https://github.com/redhat-performance/badfish/issues/228
 
 - Sriov mode change check
-  ([`9ebe6f9`](https://github.com/redhat-performance/badfish/commit/9ebe6f93c60a7f3a979a2afde20ec19a16b0d1fd))
+  ([`9ebe6f9`](https://github.com/sadsfae/badfish/commit/9ebe6f93c60a7f3a979a2afde20ec19a16b0d1fd))
 
 - Supermicro BMC reset
-  ([`e985f9d`](https://github.com/redhat-performance/badfish/commit/e985f9daac1b657f52a93c483af4401e80ce6d95))
+  ([`e985f9d`](https://github.com/sadsfae/badfish/commit/e985f9daac1b657f52a93c483af4401e80ce6d95))
 
 closes: https://github.com/redhat-performance/badfish/issues/329
 
 - Support for remote virtual media on nfs
-  ([`96ab059`](https://github.com/redhat-performance/badfish/commit/96ab0599a13f430855ff97eccbf174449b732207))
+  ([`96ab059`](https://github.com/sadsfae/badfish/commit/96ab0599a13f430855ff97eccbf174449b732207))
 
 closes: https://github.com/redhat-performance/badfish/issues/228
 
 ### Testing
 
 - Added gif tests
-  ([`ec42b68`](https://github.com/redhat-performance/badfish/commit/ec42b68e4f34bb68e862755764b094253dea6a60))
+  ([`ec42b68`](https://github.com/sadsfae/badfish/commit/ec42b68e4f34bb68e862755764b094253dea6a60))
 
 - Added job-queue and reset-bios plus refactoring
-  ([`d434f95`](https://github.com/redhat-performance/badfish/commit/d434f958b88866035f84a743d8759d08a5bd13ce))
+  ([`d434f95`](https://github.com/sadsfae/badfish/commit/d434f958b88866035f84a743d8759d08a5bd13ce))
 
 - Added ls-interfaces
-  ([`ad0ee09`](https://github.com/redhat-performance/badfish/commit/ad0ee09afd87ae18d36ce6fb301f9a2659fa804a))
+  ([`ad0ee09`](https://github.com/sadsfae/badfish/commit/ad0ee09afd87ae18d36ce6fb301f9a2659fa804a))
 
 - Added tests for boot to uefi
-  ([`ef3a26a`](https://github.com/redhat-performance/badfish/commit/ef3a26a0f8494ad9702d7702faec3d7e9c4b2c49))
+  ([`ef3a26a`](https://github.com/sadsfae/badfish/commit/ef3a26a0f8494ad9702d7702faec3d7e9c4b2c49))
 
 - Added tests for fw-inventory, ls-memory and ls-proc
-  ([`641dee8`](https://github.com/redhat-performance/badfish/commit/641dee8e808f37a5d9956dfa3c2aa37dff71b440))
+  ([`641dee8`](https://github.com/sadsfae/badfish/commit/641dee8e808f37a5d9956dfa3c2aa37dff71b440))
 
 - Added tests for virtual media check and unmount
-  ([`ef2ebf8`](https://github.com/redhat-performance/badfish/commit/ef2ebf88d5e2b1f2372a25ad8902b9c4ae9ab7db))
+  ([`ef2ebf8`](https://github.com/sadsfae/badfish/commit/ef2ebf88d5e2b1f2372a25ad8902b9c4ae9ab7db))
 
 - Coveragerc to use src directory
-  ([`576abc7`](https://github.com/redhat-performance/badfish/commit/576abc713e5bfdd17092617cf8f736d231b2bb26))
+  ([`576abc7`](https://github.com/sadsfae/badfish/commit/576abc713e5bfdd17092617cf8f736d231b2bb26))
 
 - Fixes to custom_interfaces and boot_to
-  ([`9e783a7`](https://github.com/redhat-performance/badfish/commit/9e783a77fba08fa2f634e3447a6eae401bce6df4))
+  ([`9e783a7`](https://github.com/sadsfae/badfish/commit/9e783a77fba08fa2f634e3447a6eae401bce6df4))
 
 - Increased code coverage for badfish.py
-  ([`a654394`](https://github.com/redhat-performance/badfish/commit/a654394f1f7a6cc76dcdc64216661f72ee3b63bd))
+  ([`a654394`](https://github.com/sadsfae/badfish/commit/a654394f1f7a6cc76dcdc64216661f72ee3b63bd))
 
 - Increased code coverage for badfish.py
-  ([`109be50`](https://github.com/redhat-performance/badfish/commit/109be50d34d69de55b0a80064455061945487740))
+  ([`109be50`](https://github.com/sadsfae/badfish/commit/109be50d34d69de55b0a80064455061945487740))
 
 - Removed 3.11 from GHA as asynctest not compatible
-  ([`603a822`](https://github.com/redhat-performance/badfish/commit/603a822bd104f66a22736897d109e5773607a270))
+  ([`603a822`](https://github.com/sadsfae/badfish/commit/603a822bd104f66a22736897d109e5773607a270))
