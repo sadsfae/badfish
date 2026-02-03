@@ -1,0 +1,44 @@
+name: Development Build
+
+on:
+    push:
+        branches-ignore:
+            - master
+
+concurrency:
+    group: dev-build-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    quay_dev:
+        name: Push Quay (Dev)
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+            - name: Podman Login
+              env:
+                  QUAY_USER: ${{ secrets.QUAY_USERNAME }}
+                  QUAY_TOKEN: ${{ secrets.QUAY_API_TOKEN }}
+              run: echo "$QUAY_TOKEN" | podman login -u="$QUAY_USER" --password-stdin quay.io
+
+            - name: Clean Old Development Tag
+              env:
+                  QUAY_USER: ${{ secrets.QUAY_USERNAME }}
+                  QUAY_TOKEN: ${{ secrets.QUAY_API_TOKEN }}
+              run: |
+                  REPO="quay.io/quads/badfish"
+                  echo "$QUAY_TOKEN" | skopeo login -u="$QUAY_USER" --password-stdin quay.io
+
+                  echo "Attempting to delete old development tag..."
+                  skopeo delete "docker://$REPO:development" || echo "Tag development not found or already deleted."
+
+            - name: Build and Push Dev
+              run: |
+                  # Added --no-cache to ensure fresh layers
+                  podman build --no-cache -t quay.io/quads/badfish:development .
+                  podman push quay.io/quads/badfish:development
