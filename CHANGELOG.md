@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v1.2.1 (2026-02-03)
+
+### Bug Fixes
+
+- Production-release srpm generation
+  ([`f859e1e`](https://github.com/sadsfae/badfish/commit/f859e1ecc79ec1d50b7c56de2a8a3ac7b3936774))
+
+### Chores
+
+- Fix COPR workflows
+  ([`ec45870`](https://github.com/sadsfae/badfish/commit/ec4587092b619f75083701cc3e8cbc0eefff111f))
+
+
 ## v1.2.0 (2026-02-03)
 
 ### Features
