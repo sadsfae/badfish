@@ -393,7 +393,7 @@ class Badfish:
 
         _uri = "%s%s" % (self.host_uri, session_uri)
         check_response = await self.http_client.get_request(_uri, _continue=True, _get_token=True)
-        if check_response is None:
+        if check_response is None or check_response.status != 200:
             session_uri = "/redfish/v1/SessionService/Sessions"
 
         return session_uri
