@@ -1,19 +1,6 @@
 # CHANGELOG
 
 
-## v1.1.1 (2026-02-03)
-
-### Bug Fixes
-
-- Production-release srpm generation
-  ([`f859e1e`](https://github.com/redhat-performance/badfish/commit/f859e1ecc79ec1d50b7c56de2a8a3ac7b3936774))
-
-### Chores
-
-- Fix COPR workflows
-  ([`ec45870`](https://github.com/redhat-performance/badfish/commit/ec4587092b619f75083701cc3e8cbc0eefff111f))
-
-
 ## v1.1.0 (2026-02-03)
 
 ### Bug Fixes
@@ -26,8 +13,19 @@
 
 related-to: https://github.com/redhat-performance/badfish/issues/480
 
+- Production-release srpm generation
+  ([`f859e1e`](https://github.com/redhat-performance/badfish/commit/f859e1ecc79ec1d50b7c56de2a8a3ac7b3936774))
+
 - Supermicro session uri on redfish v101
   ([`b6df52a`](https://github.com/redhat-performance/badfish/commit/b6df52a3aba50dfa2da7b1352fe7e84f0e85da3b))
+
+- Unified versioning for semantic-release
+  ([`9d3d3bf`](https://github.com/redhat-performance/badfish/commit/9d3d3bfb3667dd561c73db1ff4f2950747265ea0))
+
+### Chores
+
+- Fix COPR workflows
+  ([`ec45870`](https://github.com/redhat-performance/badfish/commit/ec4587092b619f75083701cc3e8cbc0eefff111f))
 
 ### Features
 
